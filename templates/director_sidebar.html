@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+{% block headfiles %}
+{% block headers %}
+{% endblock %}
+{% endblock %}
+
+            {% block sidebar %}
+                    <li class="active">
+                        <img src="{% static 'images/femaleuser.jpg' %}" alt="Logo" style="border-radius:50%;">
+                    </li>
+                    <li class="active">
+                        <a href="{% url 'director:director_dashboard' %}"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="{% url 'director:director_profile' %}" class="dropdown-toggle" > <i class="menu-icon fa  fa-address-card"></i>Director Profile</a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="{% url 'director:project_approval' %}" class="dropdown-toggle" > <i class="menu-icon fa fa-wpforms"></i> Project Approvals</a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="{% url 'director:director_project_details' %}" class="dropdown-toggle"> <i class="menu-icon fa fa-list"></i>All Project Details</a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="{% url 'director:director_student_details' %}" class="dropdown-toggle" > <i class="menu-icon fa fa-cogs"></i>Student Details</a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="{% url 'director:director_guide_details' %}" class="dropdown-toggle" > <i class="menu-icon fa fa-money"></i>Guide Details</a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="{% url 'director:director_secretariat_details' %}" class="dropdown-toggle" > <i class="menu-icon fa fa-wpforms"></i>Secretariat Details</a>
+                    </li>
+
+            {% endblock %}
+
+{% block content %}
+
+<h1>Welcome to my Profile</h1>
+
+{% endblock %}

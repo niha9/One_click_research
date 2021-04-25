@@ -1,0 +1,316 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Kiaalap - Kiaalap Admin Template
+    Description: Kiaalap Admin Template is a responsive admin template based on the famous Bootstrap framework it's easy to edit and customize by documentation.
+    Author: Colorlib
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+    CSS INDEX
+    ===================
+
+    1. Common
+	2. Helper Class
+	3. All Nested Class
+	4. left sidebar
+		4.1 left Sidebar switcher
+	5. Header Top
+	6. Breadcrumb
+	9. widgets CSS
+	10. Event
+	11. Professors
+
+
+
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/*  3. All Nested Class
+/*----------------------------------------*/
+.product-sales-chart, .analytics-info-cs, .tranffic-als-inner, .analytics-rounded, .single-new-trend, .personal-info-wrap, .author-widgets-single, .calender-inner, .product-status-wrap, .review-tab-pro-inner, .income-dashone-total, .analytics-edu-wrap, .analytics-sparkle-line, .analysis-progrebar, .sparkline8-list, .sparkline9-list, .sparkline7-list, .sparkline10-list, .sparkline12-list, .sparkline13-list, .sparkline14-list, .sparkline13-list, .sparkline11-list, .x-editable-list, .code-editor-single, .blog-details-inner, .charts-single-pro, .about-sparkline, .sparkline-list, .button-ad-wrap, .tab-content-details, .sparkline16-list, .sparkline15-list, .tinymce-single, .single-product-item, .courses-inner, .single-latest-item, .product-payment-inner-st, .profile-info-inner, .contact-panel, .widget-int-shape, .social-media-edu{
+	padding:20px;
+	background:#fff;
+}
+/*-----------------------
+9. widgets CSS
+-------------------------*/
+.m-t-xl {
+    margin-top: 40px;
+}
+.m-t-xl h1{
+    font-size:18px;
+}
+.stats-title h4{
+	font-size:20px;
+	color:#303030;
+}
+.stats-icon i, .icon-box i{
+	font-size:30px;
+}
+.m-t-xl small, .content-bg-pro small{
+	font-size:14px;
+	line-height:24px;
+	color:#444;
+}
+.content-box h2{
+	font-size:20px;
+	color:#303030;
+}
+.content-box p{
+	font-size:14px;
+	line-height:24px;
+}
+.content-box .mg-t-box{
+	margin-top:15px;
+}
+.content-bg-pro h3{
+	font-size:20px;
+	color:#fff;
+}
+.content-bg-pro p{
+	color:#fff !important;
+}
+.content-bg-pro .text-big{
+	font-size:18px;
+}
+.btn-success.widget-btn-1{
+	background:#006DF0;
+	border:1px solid #006DF0;
+}
+.text-info {
+    color: #3498db;
+}
+.wd-tb-cr .text-success {
+    color: #006DF0;
+}
+.wd-tb-cr .text-info {
+    color: #933EC5;
+}
+.wd-tb-cr .text-warning {
+    color: #65b12d;
+}
+.wd-tb-cr .text-danger {
+    color: #D80027;
+}
+.text-warning {
+    color: #ffb606;
+}
+.text-danger {
+    color: #e74c3c;
+}
+.text-danger.ctn-ic-1{
+	color: #006DF0;
+}
+.text-success.ctn-ic-2{
+	color: #933EC5;
+}
+.text-success.ctn-ic-3{
+	color: #65b12d;
+}
+.text-success.ctn-ic-4{
+	color: #D80027;
+}
+.text-success.ctn-ic-5{
+	color: #555;
+}
+.text-big.font-light{
+	color:#fff;
+}
+.content-bg-pro small{
+	color:#fff;
+}
+
+/*----------------------------------------*/
+/*  11. Professors
+/*----------------------------------------*/
+.hpanel .panel-body {
+    background: #fff;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+}
+.program-widget-bc .table.table-striped{
+	margin-bottom:0px;
+}
+.hpanel.contact-panel-cs .panel-body, .hpanel.widget-int-shape .panel-body{
+	padding:0;
+	box-shadow:none;
+}
+.social-media-in{
+	float:right;
+}
+.social-media-in a{
+	height: 25px;
+    width: 25px;
+    background: #006DF0;
+    font-size: 13px;
+    border-radius: 50%;
+    display: block;
+    line-height: 25px;
+    text-align: center;
+    color: #fff !important;
+    margin-top: 0px;
+    margin-bottom: 5px;
+	transition: all .4s ease 0s;
+}
+.social-media-in a:hover{
+    background: #006DF0;
+	transition: all .4s ease 0s;
+}
+.custom-panel-jw h3 {
+    font-size: 16px;
+    margin-bottom: 0px;
+    color: #303030;
+    margin-top: 15px;
+}
+.custom-panel-jw .all-pro-ad {
+    font-size: 14px;
+    color: #999;
+	margin-bottom:5px;
+}
+.professor-stds-int{
+	display:flex;
+}
+.contact-stat span, .contact-stat strong {
+    font-size: 13px;
+    color: #fff;
+}
+.product-payment-inner-st{
+	padding:20px;
+	background:#fff;
+}
+#myTab3.tab-review-design, #myTabedu1.tab-review-design{
+	padding: 0px 0px 20px 0px;
+	background:#fff;
+}
+#myTab3.tab-review-design li a, #myTabedu1.tab-review-design li a{
+	padding-right: 40px;
+	text-transform:capitalize;
+}
+#myTab3.tab-review-design li i, #myTabedu1.tab-review-design li i{
+	margin-right:5px;
+}
+ul.tab-custon-design li, ul.tab-review-design li {
+    display: inline-block;
+}
+#myTab3.tab-review-design li a, #myTabedu1.tab-review-design li a {
+    padding-right: 40px;
+    text-transform: capitalize;
+	position:relative;
+	transition:all .4s ease 0s;
+}
+#myTab3.tab-review-design li a:before, #myTab4.tab-review-design li a:before, #myTabedu1.tab-review-design li a:before {
+    position: absolute;
+    bottom: -15px;
+    left: 0px;
+    width: 0%;
+    height: 2px;
+    background: #006DF0;
+    content: "";
+	transition:all .4s ease 0s;
+}
+#myTab3.tab-review-design li.active a:before, #myTab4.tab-review-design li.active a:before, #myTabedu1.tab-review-design li.active a:before {
+    position: absolute;
+    bottom: -15px;
+    left: 0px;
+    width: 80%;
+    height: 2px;
+    background: #006DF0;
+    content: "";
+	transition:all .4s ease 0s;
+}
+ul.tab-custon-design li.active a, ul.tab-review-design li.active a {
+    color: #006DF0 !important;
+}
+ul.tab-custon-design li a, ul.tab-custon-design li a:hover, ul.tab-custon-design li a:focus, ul.tab-review-design li a, ul.tab-review-design li a:hover, ul.tab-review-design li a:focus {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #909090;
+}
+ul.tab-custon-design, ul.tab-review-design {
+   padding-bottom: 20px;
+    width: 100%;
+    background: #fff;
+}
+.profile-details-hr {
+    margin-top: 20px;
+}
+.address-hr p{
+	font-size:15px;
+	line-height:24px;
+	color:#303030;
+}
+.address-hr{
+	text-align:center;
+	margin:5px 0px;
+}
+.address-hr.biography{
+	text-align:left;
+}
+.address-hr a{
+	font-size:20px;
+	color:#444;
+}
+.address-hr h3{
+	font-size:20px;
+	color:#303030;
+	font-weight:400;
+	margin:0px;
+}
+.message-avatar {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    margin-top: 1px;
+}
+.chat-message {
+    padding: 10px 0px;
+}
+.chat-message:last-child {
+    padding-bottom:0px;
+}
+.chat-discussion .chat-message .message-avatar {
+    float: left;
+    margin-right: 10px;
+}
+.chat-discussion .chat-message .message {
+    text-align: left;
+    margin-left: 55px;
+}
+.chat-discussion .message {
+    background-color: #f7f8fa;
+    text-align: left;
+    display: block;
+    padding: 10px 20px;
+    position: relative;
+    border-radius: 4px;
+}
+.message-content {
+    display: block;
+	font-size:14px;
+	color:#303030;
+	line-height:24px;
+	margin: 10px 0px;
+}
+.chat-discussion .chat-message .message-date {
+    float: right;
+}
+.message .message-author{
+	font-weight:700;
+	font-size:16px;
+	color:#303030;
+}
+.skill-title h2{
+	font-size:20px;
+}
+.ex-pro ul li {
+    padding: 4px 0px;
+    font-size: 14px;
+    color: #303030;
+}
+.ex-pro ul li i{
+    margin-right:5px;
+}

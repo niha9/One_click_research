@@ -1,0 +1,27 @@
+//SUPERUSER
+id:superuser
+pass:superuser
+
+//STUDENT
+id:student
+pass:testuser
+
+//GUIDE
+id:guide
+pass:testuser
+
+//Investigator
+id:investigator
+pass:testuser
+
+//Director
+id:director
+pass:testuser
+
+//Secretariat
+id:secretariat
+pass:testuser
+
+//IRB Member
+id:irbmember
+pass:testuser

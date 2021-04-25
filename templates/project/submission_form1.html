@@ -1,0 +1,135 @@
+{% load staticfiles %}
+
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{% static 'assets/font.css' %}">
+<style>
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.tab label {
+  font-size: 22px;
+  padding: 8px;
+}
+
+
+input,textarea,select {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  #width: 400px;
+  border: none;
+  border-radius: 40px;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+.ques {
+  font-weight: bold;
+  font-size: 22px;
+  padding: 2px;
+  text-align: left;
+}
+label{
+  text-align:left;
+  float:left;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+</style>
+<body>
+
+<form id="regForm" method="post" action="#">
+  {% csrf_token %}
+  <h1>Submission Form Part 1</h1>
+
+     <p class="ques">Research Fellow/DNB Student Details</p>
+      {{ form3.as_p }}
+
+
+  <p class="ques">Purpose Of Study</p>
+    {{ form4.as_p }}
+
+
+  <p class="ques">Project Details</p>
+    {{ form5.as_p }}
+
+
+  <p class="ques">Timeframe Calculations (Days)</p>
+    {{ form6.as_p }}
+
+{#  <p class="ques">Collabartaions (if any) with outside agency/Institution</p>#}
+{#    {{ form7.as_p }}#}
+
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+</form>
+
+</body>
+</html>>

@@ -1,0 +1,240 @@
+{% extends 'student_sidebar.html' %}
+
+{% load staticfiles %}
+{% block headers %}
+        <link rel="stylesheet" href="{% static 'assets/libs/css/style.css' %}">
+    <link href="{% static 'vendors/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="{% static 'build/css/custom.min.css' %}" rel="stylesheet">
+{% endblock%}
+
+{% block content %}
+
+    <div class="container body">
+      <div class="main_container">
+
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>Project Detail </h3>
+              </div>
+
+
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="x_panel">
+
+
+                  <div class="x_content">
+
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+
+                      <ul class="stats-overview">
+                        <li>
+                          <span class="name"> Project Code No </span>
+                          <span class="value text-success"> 518 </span>
+                        </li>
+                        <li>
+                          <span class="name"> Researcher Name </span>
+                          <span class="value text-success">{{ cuser.name }}</span>
+                        </li>
+                        <li class="hidden-phone">
+                          <span class="name"> Submission Due Date </span>
+                          <span class="value text-success"> 21//08/19 </span>
+                        </li>
+                      </ul>
+                      <br />
+            <div class="container-fluid dashboard-content">
+                <!-- ============================================================== -->
+                    <!-- pageheader -->
+                    <!-- ============================================================== -->
+
+                           <h2 class="pageheader-title">Project Status </h2>
+
+
+                    <section class="cd-timeline js-cd-timeline">
+                        <div class="cd-timeline__container">
+
+
+                            <div class="cd-timeline__block js-cd-block">
+                                {% if student.st_project_status >= 2 %}
+                                <div class="cd-timeline__img cd-timeline__img--green js-cd-img">
+                                </div>
+                                {% endif %}
+                                 {% if student.st_project_status < 2 %}
+                                <div class="cd-timeline__img cd-timeline__img--yellow js-cd-img">
+                                </div>
+                                {% endif %}
+                                <!-- cd-timeline__img -->
+                                <div class="cd-timeline__content js-cd-content">
+                                    <h3>Guide Approval</h3>
+                                        {% if student.st_project_status == 0 %}
+                                            <h6><a href="{% url 'project:project' %}" style="text-align:right; color:red;">*Modify</a></h6>
+                                    {% endif %}
+                                    <span class="cd-timeline__date">12 July, 2016</span>
+                                </div>
+                                <!-- cd-timeline__content -->
+                            </div>
+                            <!-- cd-timeline__block -->
+                            <div class="cd-timeline__block js-cd-block">
+                                {% if student.st_project_status >= 4 %}
+                                <div class="cd-timeline__img cd-timeline__img--green js-cd-img">
+                                </div>
+                                {% endif %}
+                                 {% if student.st_project_status < 4 %}
+                                <div class="cd-timeline__img cd-timeline__img--yellow js-cd-img">
+                                </div>
+                                {% endif %}
+                                <!-- cd-timeline__img -->
+                                <div class="cd-timeline__content js-cd-content">
+                                    <h3>Director Review</h3>
+                                    <span class="cd-timeline__date">20 July, 2017</span>
+                                </div>
+                                <!-- cd-timeline__content -->
+                            </div>
+                            <!-- cd-timeline__block -->
+                            <div class="cd-timeline__block js-cd-block">
+                                {% if student.st_project_status >= 5 %}
+                                <div class="cd-timeline__img cd-timeline__img--green js-cd-img">
+                                </div>
+                                {% endif %}
+                                 {% if student.st_project_status < 5 %}
+                                <div class="cd-timeline__img cd-timeline__img--yellow js-cd-img">
+                                </div>
+                                {% endif %}
+                                <!-- cd-timeline__img -->
+                                <div class="cd-timeline__content js-cd-content">
+                                    <h3>IRB Review</h3>
+                                    {% if student.st_project_status == 6 %}
+                                            <h6><a href="#" style="text-align:right; color:red;">*Modify</a></h6>
+                                    {% endif %}
+                                    <span class="cd-timeline__date">24 July, 2018</span>
+                                </div>
+                                <!-- cd-timeline__content -->
+                            </div>
+                            <!-- cd-timeline__block -->
+                            <div class="cd-timeline__block js-cd-block">
+                                {% if student.st_project_status >= 9 %}
+                                <div class="cd-timeline__img cd-timeline__img--green js-cd-img">
+                                </div>
+                                {% endif %}
+                                 {% if student.st_project_status < 9 %}
+                                <div class="cd-timeline__img cd-timeline__img--yellow js-cd-img">
+                                </div>
+                                {% endif %}
+                                <!-- cd-timeline__img -->
+                                <div class="cd-timeline__content js-cd-content">
+                                    <h3>Final Review</h3>
+                                    <span class="cd-timeline__date">12 September, 2018</span>
+                                </div>
+                                <!-- cd-timeline__content -->
+                            </div>
+                            <!-- cd-timeline__block -->
+                            <div class="cd-timeline__block js-cd-block">
+                                <div class="cd-timeline__img cd-timeline__img--yellow js-cd-img">
+                                </div>
+                                <!-- cd-timeline__img -->
+                                <div class="cd-timeline__content js-cd-content">
+                                    <h3>Budget Sanction</h3>
+                                    <span class="cd-timeline__date">20 September, 2018</span>
+                                </div>
+                                <!-- cd-timeline__content -->
+                            </div>
+                            <!-- cd-timeline__block -->
+                            <div class="cd-timeline__block js-cd-block">
+                                <div class="cd-timeline__img cd-timeline__img--red js-cd-img">
+                                </div>
+                                <!-- cd-timeline__img -->
+                                <div class="cd-timeline__content js-cd-content">
+                                    <h3>Final Submission</h3>
+                                    <p>This is the content of the last section</p>
+                                    <span class="cd-timeline__date">1 October, 2018</span>
+                                </div>
+                                <!-- cd-timeline__content -->
+                            </div>
+                            <!-- cd-timeline__block -->
+                        </div>
+                    </section>
+                    <!-- cd-timeline -->
+
+                  <!-- ============================================================== -->
+                    <!-- end timeline  -->
+                    <!-- ============================================================== -->
+            </div>
+                    </div>
+
+
+                    <!-- start project-detail sidebar -->
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+
+                      <section class="panel">
+
+                        <div class="x_title">
+                          <h3>Project Title</h3>
+                          <div class="clearfix"></div>
+                        </div>
+                        <div class="panel-body">
+                          <h4 class="green">Project Description</h4>
+
+                          <p style="font-size:13px;">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terr.</p>
+                          <br />
+
+                          <div class="project_detail">
+
+                            <p class="title">Investigator Name</p>
+                            <p>{{ project.PI_id }}</p>
+                            <p class="title">Co-Investigaor Name</p>
+                            <p>Tony Chicken</p>
+                            <p class="title">Date of Approval</p>
+                            <p>Deveint Inc</p>
+                            <p class="title">Student Id</p>
+                            <p>Deveint Inc</p>
+                            <p class="title">Time Frame</p>
+                            <p>Tony Chicken</p>
+                            <p class="title">Budget</p>
+                            <p>Deveint Inc</p>
+                            <p class="title">Enrollment Period</p>
+                            <p>Tony Chicken</p>
+
+                          </div>
+
+                          <br />
+                          <h5>Project files</h5>
+                          <ul class="list-unstyled project_files">
+                            <li><a href=""><i class="fa fa-file-word-o"></i> Functional-requirements.docx</a>
+                            </li>
+                          </ul>
+                          <br />
+
+                          <div class="text-center mtop20">
+                            <a href="#" class="btn btn-sm btn-primary">Download Paper</a>
+                          </div>
+                        </div>
+
+                      </section>
+
+                    </div>
+                    <!-- end project-detail sidebar -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+
+        <!-- /footer content -->
+      </div>
+    </div>
+{% endblock %}

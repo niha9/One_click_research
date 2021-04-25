@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+{% block headfiles %}
+{% block headers %}
+{% endblock %}
+{% endblock %}
+
+            {% block sidebar %}
+                    <li class="active">
+                        <img src="{% static 'images/maleuser.png' %}" alt="Logo" style="border-radius:50%;">
+                    </li>
+                    <li class="active">
+                        <a href="{% url 'secretariat:secretariat_dashboard' %}"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="{% url 'secretariat:secretariat_profile' %}" class="dropdown-toggle"> <i class="menu-icon fa  fa-address-card"></i>Secretariat Profile</a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="{% url 'secretariat:secretariat_director_review' %}" class="dropdown-toggle"> <i class="menu-icon fa fa-list"></i>Director Review</a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="{% url 'secretariat:secretariat_irb_review' %}" class="dropdown-toggle" > <i class="menu-icon fa fa-cogs"></i>IRB Review</a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="{% url 'secretariat:secretariat_final_review' %}" class="dropdown-toggle" > <i class="menu-icon fa fa-money"></i>Final Review</a>
+                    </li>
+            {% endblock %}
+
+{% block content %}
+
+<h1>Welcome to my Profile</h1>
+
+{% endblock %}

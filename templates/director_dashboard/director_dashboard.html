@@ -1,0 +1,102 @@
+{% extends 'director_sidebar.html' %}
+{% load staticfiles %}
+{% block content %}
+{% block headers %}
+    <link rel="stylesheet" href="{% static 'progess.css' %}">
+
+{% endblock %}
+<h1>Welcome to Director Dashboard</h1>
+<br>
+<br>
+<div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card" style="background-color:#57889c;">
+                            <div class="card-body">
+                                <div class="stat-widget-five">
+                                    <div class="stat-icon dib flat-color-1">
+                                        <i class="pe-7s-study" style="color:white;"></i>
+                                    </div>
+                                    <div class="stat-content">
+                                        <div class="text-left dib">
+                                            <div class="stat-text" style="color:white;"><span class="count">8652</span></div>
+                                            <div class="stat-heading" style="color:white;">Students</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!--
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card" style="background-color:#D6A2E8;">
+                            <div class="card-body">
+                                <div class="stat-widget-five">
+                                    <div class="stat-icon dib flat-color-2">
+                                        <i class="pe-7s-note2" style="color:white;"></i>
+                                    </div>
+                                    <div class="stat-content">
+                                        <div class="text-left dib">
+                                            <div class="stat-text" style="color:white;"><span class="count">3435</span></div>
+                                            <div class="stat-heading" style="color:white;">Projects</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card" style="background-color:#686de0;">
+                            <div class="card-body">
+                                <div class="stat-widget-five">
+                                    <div class="stat-icon dib flat-color-1">
+                                        <i class="pe-7s-note2" style="color:white;"></i>
+                                    </div>
+                                    <div class="stat-content">
+                                        <div class="text-left dib">
+                                            <div class="stat-text" style="color:white;"><span class="count">11664</span></div>
+                                            <div class="stat-heading" style="color:white;">Projects</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card" style="background-color:#353b48;">
+                            <div class="card-body">
+                                <div class="stat-widget-five">
+                                    <div class="stat-icon dib flat-color-1">
+                                        <i class="pe-7s-users" style="color:white;"></i>
+                                    </div>
+                                    <div class="stat-content">
+                                        <div class="text-left dib">
+                                            <div class="stat-text" style="color:white;"><span class="count">2356</span></div>
+                                            <div class="stat-heading" style="color:white;">Guides</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card" style="background-color:#d1b993;">
+                            <div class="card-body">
+                                <div class="stat-widget-five">
+                                    <div class="stat-icon dib flat-color-1">
+                                        <i class="pe-7s-science" style="color:white;"></i>
+                                    </div>
+                                    <div class="stat-content">
+                                        <div class="text-left dib">
+                                            <div class="stat-text" style="color:white;"><span class="count">23569</span></div>
+                                            <div class="stat-heading" style="color:white;">Topics</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+</div>
+
+    {% endblock %}

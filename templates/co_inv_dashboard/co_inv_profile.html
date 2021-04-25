@@ -1,0 +1,187 @@
+{% extends 'guide_sidebar.html' %}
+
+
+{% load staticfiles %}
+
+{% block headers %}
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Professor Profile | Kiaalap - Kiaalap Admin Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- style CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+{% endblock %}
+{% block content %}
+
+<h1>Welcome to Guide Profile</h1>
+        <!-- Single pro tab review Start-->
+        <div class="single-pro-review-area mt-t-30 mg-b-15">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="profile-info-inner">
+                            <div class="profile-img">
+                                <img src="{% static 'images/user2.jpg' %}" alt="" />
+                            </div>
+                            <div class="profile-details-hr">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                                        <div class="address-hr">
+                                            <p><b>Name</b><br /> Fly Zend</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                                        <div class="address-hr tb-sm-res-d-n dps-tb-ntn">
+                                            <p><b>Designation</b><br /> Head of Dept.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                                        <div class="address-hr">
+                                            <p><b>Email ID</b><br /> fly@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                                        <div class="address-hr tb-sm-res-d-n dps-tb-ntn">
+                                            <p><b>Phone</b><br /> +01962067309</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="address-hr">
+                                            <p><b>Address</b><br /> E104, catn-2, Chandlodia Ahmedabad Gujarat, UK.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                        <div class="product-payment-inner-st res-mg-t-30 analysis-progrebar-ctn">
+                            <ul id="myTabedu1" class="tab-review-design">
+                                <li class="active"><a href="#description">Activity</a></li>
+                                <li><a href="#reviews"> Biography</a></li>
+                                <li><a href="#INFORMATION">Update Details</a></li>
+                            </ul>
+                            <div id="myTabContent" class="tab-content custom-product-edit">
+                                <div class="product-tab-list tab-pane fade active in" id="description">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-tab-list tab-pane fade" id="INFORMATION">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <input name="number" type="text" class="form-control" placeholder="First Name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Last Name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Address">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Date of Birth">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Department">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="number" class="form-control" placeholder="Pincode">
+                                                        </div>
+                                                        <div class="file-upload-inner ts-forms">
+                                                            <div class="input prepend-big-btn">
+                                                                <label class="icon-right" for="prepend-big-btn">
+																	</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group sm-res-mg-15 tbpf-res-mg-15">
+                                                            <input type="text" class="form-control" placeholder="Description">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+																<option>Select Gender</option>
+																<option>Male</option>
+																<option>Female</option>
+															</select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+																	<option>Select country</option>
+																	<option>India</option>
+																	<option>Pakistan</option>
+																	<option>Amerika</option>
+																	<option>China</option>
+																	<option>Dubai</option>
+																	<option>Nepal</option>
+																</select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+																	<option>Select state</option>
+																	<option>Gujarat</option>
+																	<option>Maharastra</option>
+																	<option>Rajastan</option>
+																	<option>Maharastra</option>
+																	<option>Rajastan</option>
+																	<option>Gujarat</option>
+																</select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+																	<option>Select city</option>
+																	<option>Surat</option>
+																	<option>Baroda</option>
+																	<option>Navsari</option>
+																	<option>Baroda</option>
+																	<option>Surat</option>
+																</select>
+                                                        </div>
+                                                        <input type="number" class="form-control" placeholder="Mobile no.">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="payment-adress mg-t-15">
+                                                            <button type="submit" class="btn btn-primary waves-effect waves-light mg-b-15">Submit</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <!-- meanmenu JS
+		============================================ -->
+    <script src="{% static 'js/jquery.meanmenu.js' %}"></script>
+    <!-- tab JS
+		============================================ -->
+    <script src="{% static 'js/tab.js' %}"></script>
+    <!-- main JS
+		============================================ -->
+    <script src="{% static 'js/main.js' %}"></script>
+{% endblock %}

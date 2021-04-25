@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+{% block headfiles %}
+{% block headers %}
+{% endblock %}
+{% endblock %}
+
+            {% block sidebar %}
+                    <li class="active">
+                        <img src="{% static 'images/femaleuser.jpg' %}" alt="Logo" style="border-radius:50%;">
+                    </li>
+                    <li class="active">
+                        <a href="{% url 'guide:guide_dashboard' %}"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="{% url 'guide:guide_profile' %}" class="dropdown-toggle" > <i class="menu-icon fa  fa-address-card"></i>Guide Profile</a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="{% url 'guide:guide_student' %}" class="dropdown-toggle"> <i class="menu-icon fa fa-list"></i>Student Details</a>
+                    </li>
+
+            {% endblock %}
+
+{% block content %}
+
+<h1>Welcome to my Profile</h1>
+
+{% endblock %}

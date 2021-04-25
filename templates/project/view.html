@@ -1,0 +1,27 @@
+{% extends 'guide_sidebar.html' %}
+
+{% load staticfiles %}
+{% block headers %}
+        <link rel="stylesheet" href="{% static 'assets/libs/css/style.css' %}">
+    <link href="{% static 'vendors/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="{% static 'build/css/custom.min.css' %}" rel="stylesheet">
+{% endblock%}
+
+{% block content %}
+    Student Name : {{ project.stud_id.student_id.name }} <br>
+    Guide : {{ project.PI_id.principal_id.name }} <br>
+    Enrollment period for prospective study : {{ project.principal_id.name }} <br>
+    Period of data to be included in the Retrospective study : {{ project.period_of_data }}<br>
+    Budget Estimated (Total Amount): {{ project.budget_estimate }}
+ <br>   Funding Body : {{ project.get_choose_fund_display }}
+<br>    Sample Size : {{ project.sample_size }}
+ <br>   Prospective studies enrollment sample collection period : {{ project.Time_frame_id.study_coll_period }}
+  <br>  Retrospective studies : {{ project.Time_frame_id.retro_period }}
+    <br>Period of Individual Patient participation : {{ project.Time_frame_id.patient_part }}
+   <br> Data Analysis : {{ project.Time_frame_id.data_analysis }}
+    <br>Write up/submission of Thesis/Paper: {{ project.Time_frame_id.Thesis_submis }}
+
+
+{% endblock %}

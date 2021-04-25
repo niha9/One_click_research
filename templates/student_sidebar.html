@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+{% block headfiles %}
+{% block headers %}
+{% endblock %}
+{% endblock %}
+
+
+            {% block sidebar %}
+                    <li class="active">
+                        <img src="{% static 'images/maleuser.png' %}" alt="Logo" style="border-radius:50%;height:190px;margin-left: 20px;">
+                    </li>
+                    <li class=" dropdown">
+                        <div style="padding:10px; font-size:20px;"><center>{{user}}</center></div>
+                    </li>
+                    <li class="active">
+                        <a href="{% url 'student:student_dashboard' %} "><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="{% url 'student:student_profile' %}" class="dropdown-toggle"> <i class="menu-icon fa  fa-address-card"></i>Student Profile</a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="{% url 'student:student_project_details' %}" class="dropdown-toggle"> <i class="menu-icon fa fa-list"></i>Project Details</a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="{% url 'student:student_completion_report' %}" class="dropdown-toggle" > <i class="menu-icon fa fa-wpforms"></i>Completion Report</a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                   <a href="{% url 'student:budget:addform' %}" class="dropdown-toggle" > <i class="menu-icon fa fa-money"></i>Budget form</a>
+                    </li>
+                 <li class="menu-item-has-children dropdown">
+                   <a href="{% url 'project:project2' %}" class="dropdown-toggle" > <i class="menu-icon fa fa-money"></i>Submission form 2</a>
+                    </li>
+                 <li class="menu-item-has-children dropdown">
+                   <a href="{% url 'student:budget:term' %}" class="dropdown-toggle" > <i class="menu-icon fa fa-money"></i>Term Extension Form</a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="{% url 'student:student_documents' %}" class="dropdown-toggle" > <i class="menu-icon fa fa-wpforms"></i>Documents</a>
+                    </li>
+            {% endblock %}
+
+{% block content %}
+
+<h1>Welcome to my Profile</h1>
+
+{% endblock %}

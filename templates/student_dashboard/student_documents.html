@@ -1,0 +1,46 @@
+{% extends 'student_sidebar.html' %}
+
+
+{% load staticfiles %}
+
+{% block headers %}
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Professor Profile | Kiaalap - Kiaalap Admin Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <!-- style CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+{% endblock %}
+{% block content %}
+
+<h1>Welcome to Student Profile</h1>
+        <!-- Single pro tab review Start-->
+    <select>
+    {% for docs in documents %}
+        <option>{{ docs.name }}</option>
+    {% endfor %}
+    </select>
+    {% for docs in documents %}
+{#        <a href="http://127.0.0.1:8000/media/AA_portion.jpeg">{{ docs.name }}</a>#}
+         <a href="{{docs.file.url}}">{{docs.name}}</a>
+
+        {{ docs.file.name }}
+        <br>
+{#        <img src="{{MEDIA_URL}}{{  }}" />#}
+    {% endfor %}
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <!-- meanmenu JS
+		============================================ -->
+    <script src="{% static 'js/jquery.meanmenu.js' %}"></script>
+    <!-- tab JS
+		============================================ -->
+    <script src="{% static 'js/tab.js' %}"></script>
+    <!-- main JS
+		============================================ -->
+    <script src="{% static 'js/main.js' %}"></script>
+{% endblock %}
